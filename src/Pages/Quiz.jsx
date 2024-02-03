@@ -124,7 +124,7 @@ const Quiz = () => {
                                     <li
                                         key={option.text}
                                         onClick={() => handleAnswerSelect(option.text)}
-                                        className='px-4 py-2 rounded bg-blue-100 duration-100 ease-in-out cursor-pointer hover:bg-blue-500'
+                                        className='px-4 py-2 rounded bg-emerald-100 duration-100 ease-in-out cursor-pointer hover:bg-emerald-500'
                                     >
                                         {option.text}
                                     </li>
