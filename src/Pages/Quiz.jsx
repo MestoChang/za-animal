@@ -65,7 +65,7 @@ const Quiz = () => {
         console.log("A:", scoreA, "B:", scoreB, "C:", scoreC, "D:", scoreD, "E:", scoreE, "F:", scoreF);
 
         // get highest score and type
-        const scoreArray = [scoreA, scoreB, scoreC, scoreD, scoreE, scoreE, scoreF];
+        const scoreArray = [scoreA, scoreB, scoreC, scoreD, scoreE, scoreF];
         const maxScore = Math.max(...scoreArray);
         setFinalResult(scoreArray.indexOf(maxScore));
         setFinalScore(maxScore);
