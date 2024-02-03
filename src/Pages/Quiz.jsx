@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import quizData from '../database/quizData';
-import resultData from '../database/resultData';
 
 import Button from '../components/Button';
 import { Start, Result } from '../pages';

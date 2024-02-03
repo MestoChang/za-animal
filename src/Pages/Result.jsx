@@ -19,14 +19,14 @@ const Result = ({ finalResult }) => {
 
                 {
                     showImg ? (
-                        <div>
+                        <div className='w-full'>
                             <img src={resultData[index].img} className='w-full max-h-screen lg:max-h-[400px] mb-2' />
                         </div>
                     ) : (
-                        <div className='flex flex-col gap-2 items-center'>
+                        <div className='flex flex-col gap-3 '>
 
                             {/* Type */}
-                            <span className='text-xl font-bold bg-green-600 text-white p-4'>
+                            <span className='flex justify-center items-center text-xl font-bold bg-green-600 text-white px-3 py-1'>
                                 {resultData[index].type}
                             </span>
 
@@ -45,23 +45,25 @@ const Result = ({ finalResult }) => {
                             ))}
 
                             {/* hashtag */}
-                            <div>
+                            <div className='flex flex-col gap-1'>
                                 {resultData[index].hashtag.map((tag, index) => (
                                     <span key={index}>
-                                        {tag}
+                                        # {tag}
                                     </span>
                                 ))}
                             </div>
 
 
-                            <Button primary onClick={toggleImage} className="mt-6 flex justify-center w-1/2">
-                                顯示圖片
-                            </Button>
-
                         </div>
                     )
                 }
 
+                <div className='w-full flex justify-center mt-6'>
+                    <Button primary onClick={toggleImage} className="flex justify-center w-full md:w-1/2 ">
+                        {showImg ? "顯示文字" : "顯示圖片"}
+                    </Button>
+
+                </div>
 
 
             </div>

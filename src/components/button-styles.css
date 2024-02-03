@@ -7,11 +7,11 @@
 }
 
 .primary-btn {
-    @apply bg-sky-600 text-white;
+    @apply bg-emerald-600 text-white;
 }
 
 .primary-outline-btn {
-    @apply  text-sky-600 ring-1 ring-inset ring-sky-600;
+    @apply  text-emerald-600 ring-1 ring-inset ring-emerald-600;
 }
 
 .secondary-btn {

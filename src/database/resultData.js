@@ -1,4 +1,4 @@
-// import { Result01, Result02, Result03, Result04, Result05 } from "../asset";
+import { Result01, Result02, Result03, Result04, Result05, Result06 } from "./asset";
 
 const resultData = [
     {
@@ -15,7 +15,7 @@ const resultData = [
         hashtag: [
             "搭子",
         ],
-        // img: ,
+        img: Result01,
     },
     {
         // Score B
@@ -31,7 +31,7 @@ const resultData = [
         hashtag: [
             "我是誰，我在哪",
         ],
-        // img: ,
+        img: Result02,
     },
     {
         // Score C
@@ -47,7 +47,7 @@ const resultData = [
         hashtag: [
             "Keyword",
         ],
-        // img: ,
+        img: Result03,
     },
     {
         // Score D
@@ -65,7 +65,7 @@ const resultData = [
             "沒技術還不是渣",
             "卷王"
         ],
-        // img: ,
+        img: Result04,
     },
     {
         // Score E
@@ -83,7 +83,7 @@ const resultData = [
             "錢不是萬能，但沒錢萬萬不能",
             "這個有打折嗎"
         ],
-        // img: ,
+        img: Result05,
     },
     {
         // Score F
@@ -102,7 +102,7 @@ const resultData = [
             "不要拍我，我素顏",
             "這張太醜了，刪掉"
         ],
-        // img: ,
+        img: Result06,
     },
 ]
 
