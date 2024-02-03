@@ -25,12 +25,12 @@ const Quiz = () => {
     const [scoreF, setScoreF] = useState(0);
 
 
-    // 開始測試
+    // start quiz
     const handleStartTest = () => {
         setIsTestStarted(true);
     };
 
-    // 重新測試
+    // restart
     const handleRetakeTest = () => {
         setCurrentQuestion(0);
         setUserAnswers([]);
@@ -94,7 +94,6 @@ const Quiz = () => {
                     <div className='p-6 w-full h-full flex flex-col items-center justify-center '>
 
                         <Result finalResult={finalResult} />
-                        {/* <Result /> */}
 
                         {/* Restart btn */}
                         <div className='mt-6 my-8 w-full flex justify-center'>
