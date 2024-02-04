@@ -1,9 +1,10 @@
+import { Q1 } from "./asset";
 
 const quizData = [
     {
         title: "Question_01",
+        image: Q1,
         question: "震驚過後，你試圖理解發生了什麼事，你會先...",
-        // image: quizImg01,
         options: [
             {
                 text: '確認自己的模樣，是否還是原來的自己',
@@ -43,6 +44,7 @@ const quizData = [
     },
     {
         title: "Question_02",
+        image: Q2,
         question: "你想起一件重要的事，得趕快回到原來的世界才行，那是...",
         options: [
             {
@@ -83,6 +85,7 @@ const quizData = [
     },
     {
         title: "Question_03",
+        image: Q3,
         question: "你決心要找到離開的路，開始往前探索，你覺得前方會遇到...",
         options: [
             {
@@ -122,6 +125,7 @@ const quizData = [
     },
     {
         title: "Question_04",
+        image: Q4,
         question: "來到山洞前，一隻梅花鹿趴臥在洞口，牠非常口渴而向你要水喝，你會怎麼做？",
         options: [
             {
@@ -162,6 +166,7 @@ const quizData = [
     },
     {
         title: "Question_05",
+        image: Q5,
         question: "在山洞裡摸黑走了一陣子，終於看見出口的亮光，這時聽見有腳步聲朝你走來，你覺得會是...",
         options: [
             {
@@ -203,6 +208,7 @@ const quizData = [
 
     {
         title: "Question_06",
+        image: Q6,
         question: "一大片清澈的湖水印入眼簾，旁邊立牌寫著「許願池」，你願意投入什麼作為許願的代價？",
         options: [
             {
@@ -242,6 +248,7 @@ const quizData = [
     },
     {
         title: "Question_07",
+        image: Q7,
         question: "一位美麗的湖中女神真的出現，為了幫助你更順利地在這座森林中探索，你選擇...",
         options: [
             {
@@ -281,6 +288,7 @@ const quizData = [
     },
     {
         title: "Question_08",
+        image: Q8,
         question: "道別湖中女神後，你繼續前行，發現空無一人的小木屋，裡面有...",
         options: [
             {
@@ -320,6 +328,7 @@ const quizData = [
     },
     {
         title: "Question_09",
+        image: Q9,
         question: "打開後門出去，外面有著絕景雲海，伴隨著金黃色的夕陽，十分美麗...",
         options: [
             {
@@ -359,6 +368,7 @@ const quizData = [
     },
     {
         title: "Question_10",
+        image: Q10,
         question: "突然一陣天搖地動，森林裡似乎發生了巨變，此時你會擔心...",
         options: [
             {
@@ -398,6 +408,7 @@ const quizData = [
     },
     {
         title: "Question_11",
+        image: Q11,
         question: "混亂過後，森林某處傳來了音樂與歌聲，彷彿萬物甦醒，可能會是？",
         options: [
             {
