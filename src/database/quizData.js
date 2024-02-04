@@ -3,6 +3,7 @@ const quizData = [
     {
         title: "Question_01",
         question: "震驚過後，你試圖理解發生了什麼事，你會先...",
+        // image: quizImg01,
         options: [
             {
                 text: '確認自己的模樣，是否還是原來的自己',
