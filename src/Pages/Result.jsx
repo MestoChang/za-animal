@@ -9,6 +9,13 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
         setShowResultImg(!showResultImg);
     }
 
+
+    // handleToSignUp
+    const handleToSignUp = () => {
+        const w = window.open('about:blank');
+        w.location.href = "https://www.google.com"
+    }
+
     // display result text
     function resultElement(index) {
         return (
@@ -56,15 +63,22 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                             <img src={resultData[index].img} className='w-full h-auto mb-2' />
 
                             {/* Restart btn */}
-                            <div className='mt-6 my-8 w-full flex justify-center'>
-                                {isTestCompleted ? (
+
+                            {isTestCompleted ? (
+                                <div className='mt-6 my-8 w-full flex justify-center flex-col gap-4'>
+                                    <Button primary
+                                        onClick={handleToSignUp}
+                                        className="flex w-full md:w-1/2 justify-center">
+                                        我要報名
+                                    </Button>
                                     <Button secondary
                                         onClick={handleRetakeTest}
                                         className="flex w-full md:w-1/2 justify-center">
                                         再測一次
                                     </Button>
-                                ) : null}
-                            </div>
+                                </div>
+                            ) : null}
+
 
                         </div>
                     ) : (
