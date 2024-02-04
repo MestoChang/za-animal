@@ -103,6 +103,9 @@ const Quiz = () => {
                         <h2 className='text-xl font-bold'>
                             {quizData[currentQuestion].title}
                         </h2>
+                        <div>
+                            <img src={quizData[currentQuestion].image} />
+                        </div>
                         <p>
                             {quizData[currentQuestion].question}
                         </p>
