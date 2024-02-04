@@ -1,11 +1,17 @@
 import React from 'react';
 import Button from '../components/Button';
+import { Logo } from '../database/asset';
 
 const Start = ({ onClick }) => {
     return (
         <div className='p-6 min-h-screen w-full flex flex-col justify-center items-center gap-4'>
+
             <h2 className='text-2xl font-bold text-white'>你是哪種焦慮動物</h2>
 
+            {/* logo */}
+            <div className='my-4 w-full flex justify-center'>
+                <img src={Logo} className='w-[80%]' />
+            </div>
 
             <div className='my-6 px-4 flex flex-col items-center justify-center gap-10'>
 
@@ -18,6 +24,7 @@ const Start = ({ onClick }) => {
                     <p className='mt-3'>
                         一場未知的旅行即將展開...
                     </p>
+
                 </div>
 
                 <Button primary
