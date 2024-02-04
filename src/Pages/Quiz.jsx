@@ -93,18 +93,9 @@ const Quiz = () => {
                     // Result
                     <div className='p-6 w-full h-full flex flex-col items-center justify-center '>
 
-                        <Result finalResult={finalResult} />
+                        <Result finalResult={finalResult} handleRetakeTest={handleRetakeTest} isTestCompleted={isTestCompleted} />
 
-                        {/* Restart btn */}
-                        <div className='mt-6 my-8 w-full flex justify-center'>
-                            {isTestCompleted ? (
-                                <Button secondary
-                                    onClick={handleRetakeTest}
-                                    className="flex w-full md:w-1/2 justify-center">
-                                    再測一次
-                                </Button>
-                            ) : null}
-                        </div>
+
 
                     </div>
                 ) : (
