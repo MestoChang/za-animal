@@ -96,7 +96,6 @@ const Quiz = () => {
                         <Result finalResult={finalResult} handleRetakeTest={handleRetakeTest} isTestCompleted={isTestCompleted} />
 
 
-
                     </div>
                 ) : (
                     // Quiz

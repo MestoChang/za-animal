@@ -53,7 +53,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
                             </div>
 
-                            <img src={resultData[index].img} className='w-full max-h-screen lg:max-h-[400px] mb-2' />
+                            <img src={resultData[index].img} className='w-full h-auto mb-2' />
 
                             {/* Restart btn */}
                             <div className='mt-6 my-8 w-full flex justify-center'>
@@ -71,7 +71,9 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
                         <div>
 
-                            突然你手上出現了一封信函，你趕緊打開來看，上面寫著：
+                            <p className='text-xl font-bold'>
+                                突然你手上出現了一封信函，你趕緊打開來看，上面寫著：
+                            </p>
 
                             {/* show Result Img Btn */}
                             <div className='w-full flex justify-center flex-col mt-6'>
