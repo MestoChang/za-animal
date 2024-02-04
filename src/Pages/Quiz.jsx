@@ -95,22 +95,24 @@ const Quiz = () => {
 
                         <Result finalResult={finalResult} handleRetakeTest={handleRetakeTest} isTestCompleted={isTestCompleted} />
 
-
                     </div>
                 ) : (
                     // Quiz
-                    <div className="mt-4 flex flex-col gap-4 p-6 w-full">
-                        <h2 className='text-xl font-bold'>
+                    <div className="mt-4 flex flex-col gap-4 p-6 w-full items-center ">
+                        <h2 className='text-xl font-bold text-white'>
                             {quizData[currentQuestion].title}
+                            <span className='text-sm opacity-60 ml-1'>
+                                / {quizData.length}
+                            </span>
                         </h2>
-                        <div>
+                        <div className='p-6 flex items-center justify-center'>
                             <img src={quizData[currentQuestion].image} />
                         </div>
-                        <p>
+                        <p className='text-green-100 my-3'>
                             {quizData[currentQuestion].question}
                         </p>
 
-                        <ul className="flex flex-col gap-4 my-6">
+                        <ul className="flex flex-col gap-4 my-6 w-full">
                             {
                                 quizData[currentQuestion].options.map((option) => (
                                     <li

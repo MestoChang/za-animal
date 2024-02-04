@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import resultData from '../database/resultData';
 import Button from '../components/Button';
+import { Invatation } from '../database/asset';
 
 const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
@@ -24,7 +25,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
     // display result text
     function resultElement(index) {
         return (
-            <div className='flex flex-col gap-3 items-center w-full'>
+            <div className='flex flex-col gap-4 items-center w-full'>
 
                 {/* showResult or restart */}
                 {
@@ -36,32 +37,38 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 showShareImg ? (
                                     <img src={resultData[index].shareImg} className='w-full h-auto mb-2' />
                                 ) : (
-                                    <div className='flex flex-col gap-3 '>
+                                    <div className='flex flex-col gap-3 text-white'>
 
-                                        <h3 className='text-2xl font-bold'>
-                                            {resultData[index].title}
-                                        </h3>
+                                        <img src={resultData[index].img} className='w-full h-auto mb-2 rounded-lg' />
 
-                                        {/* Type */}
-                                        <span className='flex justify-center items-center text-xl font-bold bg-green-600 text-white px-3 py-1'>
-                                            {resultData[index].type}
-                                        </span>
-
-                                        <img src={resultData[index].img} className='w-full h-auto mb-2' />
+                                        {/* title */}
+                                        <div className='flex gap-2 items-center'>
+                                            {/* Type */}
+                                            <span className='flex justify-center items-center text-lg font-bold bg-orange-600 text-white px-2 py-0.5 rounded'>
+                                                {resultData[index].type}
+                                            </span>
+                                            <h3 className='text-2xl font-bold text-center'>
+                                                {resultData[index].title}
+                                            </h3>
+                                        </div>
 
                                         {/* description */}
-                                        {resultData[index].description.map((p, index) => (
-                                            <p key={index}>
-                                                {p}
-                                            </p>
-                                        ))}
+                                        <div>
+                                            {resultData[index].description.map((p, index) => (
+                                                <p key={index}>
+                                                    {p}
+                                                </p>
+                                            ))}
+                                        </div>
 
                                         {/* invite */}
-                                        {resultData[index].invite.map((p, index) => (
-                                            <p key={index}>
-                                                {p}
-                                            </p>
-                                        ))}
+                                        <div>
+                                            {resultData[index].invite.map((p, index) => (
+                                                <p key={index}>
+                                                    {p}
+                                                </p>
+                                            ))}
+                                        </div>
 
                                         {/* hashtag */}
                                         <div className='flex flex-col gap-1'>
@@ -71,25 +78,26 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                                 </span>
                                             ))}
                                         </div>
+
                                     </div>
                                 )}
 
                             {/* Restart btn */}
                             {isTestCompleted ? (
                                 <div className='mt-6 my-8 w-full flex justify-center flex-col gap-4'>
-                                    <Button secondary
+                                    <Button primary
                                         onClick={openShareImg}
-                                        className="flex w-full md:w-1/2 justify-center">
+                                        className="flex w-full justify-center">
                                         分享結果
                                     </Button>
                                     <Button primary
                                         onClick={handleToSignUp}
-                                        className="flex w-full md:w-1/2 justify-center">
+                                        className="flex w-full justify-center">
                                         我要報名
                                     </Button>
                                     <Button secondary
                                         onClick={handleRetakeTest}
-                                        className="flex w-full md:w-1/2 justify-center">
+                                        className="flex w-full justify-center">
                                         再測一次
                                     </Button>
                                 </div>
@@ -98,14 +106,17 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                         </div>
                     ) : (
 
-                        <div>
-                            <p className='text-xl font-bold'>
-                                突然你手上出現了一封信函，你趕緊打開來看，上面寫著：
+                        <div className='flex items-center justify-center flex-col gap-6 pt-10'>
+
+                            <p className='text-xl font-bold text-white'>
+                                突然你手上出現了一封信函，你趕緊打開來看...
                             </p>
+
+                            <img src={Invatation} alt="" />
 
                             {/* show Result Img Btn */}
                             <div className='w-full flex justify-center flex-col mt-6'>
-                                <Button primary onClick={showResultImg} className="flex justify-center w-full md:w-1/2 ">
+                                <Button primary onClick={showResultImg} className="flex justify-center w-full ">
                                     顯示結果
                                 </Button>
                             </div>
