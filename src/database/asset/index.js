@@ -4,6 +4,13 @@ import Result03 from './Result_03.jpg';
 import Result04 from './Result_04.jpg';
 import Result05 from './Result_05.jpg';
 import Result06 from './Result_06.jpg';
+import ShareResult01 from './ShareResult_01.jpg';
+import ShareResult02 from './ShareResult_02.jpg';
+import ShareResult03 from './ShareResult_03.jpg';
+import ShareResult04 from './ShareResult_04.jpg';
+import ShareResult05 from './ShareResult_05.jpg';
+import ShareResult06 from './ShareResult_06.jpg';
+
 import Q1 from './Q1.png';
 import Q2 from './Q2.png';
 import Q3 from './Q3.png';
@@ -28,6 +35,14 @@ export {
     Result04,
     Result05,
     Result06,
+
+    ShareResult01,
+    ShareResult02,
+    ShareResult03,
+    ShareResult04,
+    ShareResult05,
+    ShareResult06,
+
     Q1,
     Q2,
     Q3,
@@ -39,6 +54,7 @@ export {
     Q9,
     Q10,
     Q11,
+
     QuizBottom,
     ResultBottom,
     Invatation,

@@ -1,4 +1,4 @@
-import { Result01, Result02, Result03, Result04, Result05, Result06 } from "./asset";
+import { Result01, Result02, Result03, Result04, Result05, Result06, ShareResult01, ShareResult02, ShareResult03, ShareResult04, ShareResult05, ShareResult06 } from "./asset";
 
 const resultData = [
     {
@@ -16,6 +16,7 @@ const resultData = [
             "搭子",
         ],
         img: Result01,
+        shareImg: ShareResult01,
     },
     {
         // Score B
@@ -32,6 +33,7 @@ const resultData = [
             "我是誰，我在哪",
         ],
         img: Result02,
+        shareImg: ShareResult02,
     },
     {
         // Score C
@@ -48,6 +50,7 @@ const resultData = [
             "Keyword",
         ],
         img: Result03,
+        shareImg: ShareResult03,
     },
     {
         // Score D
@@ -66,6 +69,7 @@ const resultData = [
             "卷王"
         ],
         img: Result04,
+        shareImg: ShareResult04,
     },
     {
         // Score E
@@ -84,6 +88,7 @@ const resultData = [
             "這個有打折嗎"
         ],
         img: Result05,
+        shareImg: ShareResult05,
     },
     {
         // Score F
@@ -103,6 +108,7 @@ const resultData = [
             "這張太醜了，刪掉"
         ],
         img: Result06,
+        shareImg: ShareResult06,
     },
 ]
 

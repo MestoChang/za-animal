@@ -4,9 +4,14 @@ import Button from '../components/Button';
 
 const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
-    const [showResultImg, setShowResultImg] = useState(false);
-    const toggleImage = () => {
-        setShowResultImg(!showResultImg);
+    const [showResult, setShowResult] = useState(false);
+    const showResultImg = () => {
+        setShowResult(!showResult);
+    }
+
+    const [showShareImg, setShowSharingImg] = useState(false);
+    const openShareImg = () => {
+        setShowSharingImg(!showShareImg);
     }
 
 
@@ -21,51 +26,62 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
         return (
             <div className='flex flex-col gap-3 items-center w-full'>
 
+                {/* showResult or restart */}
                 {
-                    showResultImg ? (
+                    showResult ? (
                         <div className='w-full'>
-                            <h3 className='text-2xl font-bold'>
-                                {resultData[index].title}
-                            </h3>
 
-                            {/* 文字說明 */}
-                            <div className='flex flex-col gap-3 '>
-                                {/* Type */}
-                                <span className='flex justify-center items-center text-xl font-bold bg-green-600 text-white px-3 py-1'>
-                                    {resultData[index].type}
-                                </span>
+                            {/* shareResultImg or description */}
+                            {
+                                showShareImg ? (
+                                    <img src={resultData[index].shareImg} className='w-full h-auto mb-2' />
+                                ) : (
+                                    <div className='flex flex-col gap-3 '>
 
-                                {/* description */}
-                                {resultData[index].description.map((p, index) => (
-                                    <p key={index}>
-                                        {p}
-                                    </p>
-                                ))}
+                                        <h3 className='text-2xl font-bold'>
+                                            {resultData[index].title}
+                                        </h3>
 
-                                {/* invite */}
-                                {resultData[index].invite.map((p, index) => (
-                                    <p key={index}>
-                                        {p}
-                                    </p>
-                                ))}
-
-                                {/* hashtag */}
-                                <div className='flex flex-col gap-1'>
-                                    {resultData[index].hashtag.map((tag, index) => (
-                                        <span key={index}>
-                                            # {tag}
+                                        {/* Type */}
+                                        <span className='flex justify-center items-center text-xl font-bold bg-green-600 text-white px-3 py-1'>
+                                            {resultData[index].type}
                                         </span>
-                                    ))}
-                                </div>
 
-                            </div>
+                                        <img src={resultData[index].img} className='w-full h-auto mb-2' />
 
-                            <img src={resultData[index].img} className='w-full h-auto mb-2' />
+                                        {/* description */}
+                                        {resultData[index].description.map((p, index) => (
+                                            <p key={index}>
+                                                {p}
+                                            </p>
+                                        ))}
+
+                                        {/* invite */}
+                                        {resultData[index].invite.map((p, index) => (
+                                            <p key={index}>
+                                                {p}
+                                            </p>
+                                        ))}
+
+                                        {/* hashtag */}
+                                        <div className='flex flex-col gap-1'>
+                                            {resultData[index].hashtag.map((tag, index) => (
+                                                <span key={index}>
+                                                    # {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
 
                             {/* Restart btn */}
-
                             {isTestCompleted ? (
                                 <div className='mt-6 my-8 w-full flex justify-center flex-col gap-4'>
+                                    <Button secondary
+                                        onClick={openShareImg}
+                                        className="flex w-full md:w-1/2 justify-center">
+                                        分享結果
+                                    </Button>
                                     <Button primary
                                         onClick={handleToSignUp}
                                         className="flex w-full md:w-1/2 justify-center">
@@ -79,23 +95,20 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 </div>
                             ) : null}
 
-
                         </div>
                     ) : (
 
                         <div>
-
                             <p className='text-xl font-bold'>
                                 突然你手上出現了一封信函，你趕緊打開來看，上面寫著：
                             </p>
 
                             {/* show Result Img Btn */}
                             <div className='w-full flex justify-center flex-col mt-6'>
-                                <Button primary onClick={toggleImage} className="flex justify-center w-full md:w-1/2 ">
+                                <Button primary onClick={showResultImg} className="flex justify-center w-full md:w-1/2 ">
                                     顯示結果
                                 </Button>
                             </div>
-
                         </div>
                     )
                 }
