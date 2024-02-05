@@ -2,9 +2,9 @@ import { Q1 } from "./asset";
 
 const quizData = [
     {
-        title: "Question_01",
-        image: Q1,
-        question: "震驚過後，你試圖理解發生了什麼事，你會先...",
+        title: "01",
+        icon: Q1,
+        question: "一覺醒來，你發現自己身處在一片未知的森林中，你試圖理解發生了什麼，你會先...",
         options: [
             {
                 text: '確認自己的模樣，是否還是原來的自己',
@@ -39,54 +39,13 @@ const quizData = [
                     F: 0, // 孔雀
                 }
             },
-
+        
         ],
     },
     {
-        title: "Question_02",
-        image: Q2,
-        question: "你想起一件重要的事，得趕快回到原來的世界才行，那是...",
-        options: [
-            {
-                text: '能力檢測的證照考試',
-                score: {
-                    A: 0, // 獼猴
-                    B: 1, // 鯊魚
-                    C: 0, // 狐蒙
-                    D: 3, // 翠鳥
-                    E: 0, // 棕熊
-                    F: 0, // 孔雀
-                }
-            },
-            {
-                text: '跟同學約好要做報告',
-                score: {
-                    A: 10, // 獼猴
-                    B: 0, // 鯊魚
-                    C: 0, // 狐蒙
-                    D: 0, // 翠鳥
-                    E: 0, // 棕熊
-                    F: 0, // 孔雀
-                }
-            },
-            {
-                text: '父母交代要完成的事',
-                score: {
-                    A: 0, // 獼猴
-                    B: 0, // 鯊魚
-                    C: 10, // 狐蒙
-                    D: 0, // 翠鳥
-                    E: 0, // 棕熊
-                    F: 0, // 孔雀
-                }
-            },
-
-        ],
-    },
-    {
-        title: "Question_03",
-        image: Q3,
-        question: "你決心要找到離開的路，開始往前探索，你覺得前方會遇到...",
+        title: "02",
+        icon: Q2,
+        question: "為了尋找回去的方法，你開始往前探索，你覺得前方會遇到...",
         options: [
             {
                 text: '埋藏在森林深處的寶藏',
@@ -121,17 +80,29 @@ const quizData = [
                     F: 0, // 孔雀
                 }
             },
+
         ],
     },
     {
-        title: "Question_04",
-        image: Q4,
-        question: "來到山洞前，一隻梅花鹿趴臥在洞口，牠非常口渴而向你要水喝，你會怎麼做？",
+        title: "03",
+        icon: Q3,
+        question: "在森林裡走了一段時間，還是沒有任何發現，你開始擔心...",
         options: [
             {
-                text: '把背包裡的水給牠',
+                text: '下禮拜的期末考',
                 score: {
-                    A: 3, // 獼猴
+                    A: 0, // 獼猴
+                    B: 1, // 鯊魚
+                    C: 0, // 狐蒙
+                    D: 3, // 翠鳥
+                    E: 0, // 棕熊
+                    F: 0, // 孔雀
+                }
+            },
+            {
+                text: '跟朋友約好的畢業旅行',
+                score: {
+                    A: 10, // 獼猴
                     B: 0, // 鯊魚
                     C: 0, // 狐蒙
                     D: 0, // 翠鳥
@@ -140,13 +111,42 @@ const quizData = [
                 }
             },
             {
-                text: '告訴牠溪水的方向',
+                text: '奶奶的六十歲大壽',
+                score: {
+                    A: 0, // 獼猴
+                    B: 0, // 鯊魚
+                    C: 10, // 狐蒙
+                    D: 0, // 翠鳥
+                    E: 0, // 棕熊
+                    F: 0, // 孔雀
+                }
+            },
+        ],
+    },
+    {
+        title: "04",
+        icon: Q4,
+        question: "遇見了一隻昏倒在山洞前的小梅花鹿，你會怎麼做？",
+        options: [
+            {
+                text: '帶走牠，邊尋找救治的資源',
+                score: {
+                    A: 10, // 獼猴
+                    B: 0, // 鯊魚
+                    C: 0, // 狐蒙
+                    D: 0, // 翠鳥
+                    E: 0, // 棕熊
+                    F: 0, // 孔雀
+                }
+            },
+            {
+                text: '判斷有沒有幫助牠的能力或裝備',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
                     C: 0, // 狐蒙
-                    D: 1, // 翠鳥
-                    E: 1, // 棕熊
+                    D: 10, // 翠鳥
+                    E: 0, // 棕熊
                     F: 0, // 孔雀
                 }
             },
@@ -157,31 +157,31 @@ const quizData = [
                     B: 0, // 鯊魚
                     C: 0, // 狐蒙
                     D: 0, // 翠鳥
-                    E: 1, // 棕熊
-                    F: 1, // 孔雀
+                    E: 10, // 棕熊
+                    F: 5, // 孔雀
                 }
             },
 
         ],
     },
     {
-        title: "Question_05",
-        image: Q5,
+        title: "05",
+        icon: Q5,
         question: "在山洞裡摸黑走了一陣子，終於看見出口的亮光，這時聽見有腳步聲朝你走來，你覺得會是...",
         options: [
             {
-                text: '兇猛的野獸',
+                text: '兇猛的蛤蟆怪',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
                     C: 0, // 狐蒙
-                    D: 1, // 翠鳥
-                    E: 1, // 棕熊
+                    D: 3, // 翠鳥
+                    E: 3, // 棕熊
                     F: 0, // 孔雀
                 }
             },
             {
-                text: '同樣迷路的旅人',
+                text: '同樣迷路的小精靈',
                 score: {
                     A: 3, // 獼猴
                     B: 0, // 鯊魚
@@ -207,12 +207,12 @@ const quizData = [
     },
 
     {
-        title: "Question_06",
-        image: Q6,
+        title: "06",
+        icon: Q6,
         question: "一大片清澈的湖水印入眼簾，旁邊立牌寫著「許願池」，你願意投入什麼作為許願的代價？",
         options: [
             {
-                text: '身上所有的錢',
+                text: '>背包裡僅存的食物',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
@@ -223,7 +223,7 @@ const quizData = [
                 }
             },
             {
-                text: '家人送你的手錶',
+                text: '祖傳的玉珮',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
@@ -234,7 +234,7 @@ const quizData = [
                 }
             },
             {
-                text: '跟朋友們一起去買的潮帽',
+                text: '跟朋友的交換日記',
                 score: {
                     A: -10, // 獼猴
                     B: 0, // 鯊魚
@@ -247,8 +247,8 @@ const quizData = [
         ],
     },
     {
-        title: "Question_07",
-        image: Q7,
+        title: "07",
+        icon: Q7,
         question: "一位美麗的湖中女神真的出現，為了幫助你更順利地在這座森林中探索，你選擇...",
         options: [
             {
@@ -287,8 +287,8 @@ const quizData = [
         ],
     },
     {
-        title: "Question_08",
-        image: Q8,
+        title: "08",
+        icon: Q8,
         question: "道別湖中女神後，你繼續前行，發現空無一人的小木屋，裡面有...",
         options: [
             {
@@ -303,7 +303,7 @@ const quizData = [
                 }
             },
             {
-                text: '一塵不染的鏡子',
+                text: '乾淨的浴室',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
@@ -327,8 +327,8 @@ const quizData = [
         ],
     },
     {
-        title: "Question_09",
-        image: Q9,
+        title: "09",
+        icon: Q9,
         question: "打開後門出去，外面有著絕景雲海，伴隨著金黃色的夕陽，十分美麗...",
         options: [
             {
@@ -367,8 +367,8 @@ const quizData = [
         ],
     },
     {
-        title: "Question_10",
-        image: Q10,
+        title: "10",
+        icon: Q10,
         question: "突然一陣天搖地動，森林裡似乎發生了巨變，此時你會擔心...",
         options: [
             {
@@ -378,7 +378,7 @@ const quizData = [
                     B: 0, // 鯊魚
                     C: 0, // 狐蒙
                     D: 3, // 翠鳥
-                    E: 0, // 棕熊
+                    E: 3, // 棕熊
                     F: 3, // 孔雀
                 }
             },
@@ -389,12 +389,12 @@ const quizData = [
                     B: 3, // 鯊魚
                     C: 0, // 狐蒙
                     D: 0, // 翠鳥
-                    E: 3, // 棕熊
+                    E: 0, // 棕熊
                     F: 0, // 孔雀
                 }
             },
             {
-                text: '洞穴前的那頭鹿',
+                text: '昏迷的梅花鹿',
                 score: {
                     A: 3, // 獼猴
                     B: 0, // 鯊魚
@@ -407,12 +407,12 @@ const quizData = [
         ],
     },
     {
-        title: "Question_11",
-        image: Q11,
+        title: "11",
+        icon: Q11,
         question: "混亂過後，森林某處傳來了音樂與歌聲，彷彿萬物甦醒，可能會是？",
         options: [
             {
-                text: '親子共遊的野餐會',
+                text: '通往家裡的傳送門',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
@@ -423,7 +423,7 @@ const quizData = [
                 }
             },
             {
-                text: '人聲鼎沸的森友會',
+                text: '森林動物們在開趴',
                 score: {
                     A: 10, // 獼猴
                     B: 0, // 鯊魚
@@ -434,7 +434,7 @@ const quizData = [
                 }
             },
             {
-                text: '藏龍臥虎的才藝大賽',
+                text: '你擅長的才藝大賽',
                 score: {
                     A: 0, // 獼猴
                     B: 0, // 鯊魚
