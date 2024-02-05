@@ -3,9 +3,9 @@ import { Quiz } from './pages';
 
 const App = () => {
   return (
-    <div className='relative max-w-xl mx-auto bg-slate-100'>
+    <div className='relative mx-auto w-full flex justify-center bg-emerald-100'>
 
-      <div className='z-10 absolute top-0 inset-x-0'>
+      <div className='max-w-xl min-w-72 w-[50%] z-10 inset-x-0 bg-green-800'>
         <Quiz />
       </div>
 
