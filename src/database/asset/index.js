@@ -26,7 +26,8 @@ import QuizBottom from './quizbottom.png';
 import ResultBottom from './resultbottom.png';
 import Invatation from './invatation.png';
 import Logo from './logo.png';
-
+import Title from './Title.png';
+import StartButton from './StartButton.png'; 
 
 export {
     Result01,
@@ -42,6 +43,9 @@ export {
     ShareResult04,
     ShareResult05,
     ShareResult06,
+
+    Title,
+    StartButton,
 
     Q1,
     Q2,
