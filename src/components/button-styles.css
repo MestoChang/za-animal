@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .button {
-    @apply px-3 py-1.5 text-sm font-semibold flex items-center gap-1 rounded w-fit ease-in-out duration-200 shadow-sm hover:shadow-md hover:opacity-80 hover:-translate-y-0.5;
+    @apply px-3 py-2 text-base font-semibold flex items-center gap-1 rounded-full w-fit ease-in-out duration-200 shadow-sm hover:shadow-md hover:opacity-80 hover:-translate-y-0.5;
 }
 
 .primary-btn {
@@ -11,7 +11,7 @@
 }
 
 .primary-outline-btn {
-    @apply  text-emerald-600 ring-1 ring-inset ring-emerald-600;
+    @apply text-emerald-600 ring-1 ring-inset ring-emerald-600;
 }
 
 .secondary-btn {

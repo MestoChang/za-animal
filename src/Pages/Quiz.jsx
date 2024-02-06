@@ -91,7 +91,7 @@ const Quiz = () => {
                 // Result or Quiz
                 showResult ? (
                     // Result
-                    <div className='p-6 w-full h-full flex flex-col items-center justify-center '>
+                    <div className='w-full h-full flex flex-col justify-center '>
 
                         <Result finalResult={finalResult} handleRetakeTest={handleRetakeTest} isTestCompleted={isTestCompleted} />
 
@@ -99,16 +99,16 @@ const Quiz = () => {
                 ) : (
                     // Quiz
                     <div className="mt-4 flex flex-col gap-4 p-6 w-full items-center ">
-                        <h2 className='text-xl font-bold text-white'>
+                        <h2 className='text-xl font-bold text-quizColor'>
                             {quizData[currentQuestion].title}
                             <span className='text-sm opacity-60 ml-1'>
                                 / {quizData.length}
                             </span>
                         </h2>
                         <div className='p-6 flex items-center justify-center'>
-                            <img src={quizData[currentQuestion].image} />
+                            <img src={quizData[currentQuestion].icon} />
                         </div>
-                        <p className='text-green-100 my-3'>
+                        <p className='text-quizColor my-3'>
                             {quizData[currentQuestion].question}
                         </p>
 
@@ -118,7 +118,7 @@ const Quiz = () => {
                                     <li
                                         key={option.text}
                                         onClick={() => handleAnswerSelect(option.text)}
-                                        className='px-4 py-2 rounded bg-emerald-100 duration-100 ease-in-out cursor-pointer hover:bg-emerald-500'
+                                        className='px-4 py-2 rounded text-white bg-optionBg duration-100 ease-in-out cursor-pointer hover:bg-optionHoverBg'
                                     >
                                         {option.text}
                                     </li>
