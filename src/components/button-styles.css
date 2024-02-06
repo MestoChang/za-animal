@@ -11,7 +11,7 @@
 }
 
 .primary-outline-btn {
-    @apply  text-emerald-600 ring-1 ring-inset ring-emerald-600;
+    @apply text-emerald-600 ring-1 ring-inset ring-emerald-600;
 }
 
 .secondary-btn {
