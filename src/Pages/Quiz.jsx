@@ -3,6 +3,7 @@ import quizData from '../database/quizData';
 
 import Button from '../components/Button';
 import { Start, Result } from '../pages';
+import { QuizBottom } from '../database/asset';
 
 
 
@@ -69,7 +70,7 @@ const Quiz = () => {
         const maxScore = Math.max(...scoreArray);
         setFinalResult(scoreArray.indexOf(maxScore));
         setFinalScore(maxScore);
-        console.log('finalResult =', finalResult, 'finalScore =', finalScore);
+        // console.log('finalResult =', finalResult, 'finalScore =', finalScore);
 
 
         // last question
@@ -83,7 +84,7 @@ const Quiz = () => {
 
 
     return (
-        <div className="flex flex-col items-center min-h-screen h-full w-full">
+        <div className="relative flex flex-col items-center min-h-screen h-full w-full">
 
             {/* Start or not */}
             {isTestStarted ? (
@@ -112,6 +113,7 @@ const Quiz = () => {
                             {quizData[currentQuestion].question}
                         </p>
 
+                        {/* option */}
                         <ul className="flex flex-col gap-4 my-6 w-full">
                             {
                                 quizData[currentQuestion].options.map((option) => (
@@ -125,6 +127,13 @@ const Quiz = () => {
                                 ))
                             }
                         </ul>
+
+                        {/* FIXME adjust img hight */}
+                        {/* buttom img */}
+                        <div className='absolute bottom-0'>
+                            <img src={QuizBottom} alt="" />
+                        </div>
+
                     </div>
                 )) : (
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import resultData from '../database/resultData';
 import Button from '../components/Button';
-import { Invatation, Logo } from '../database/asset';
+import { Invatation, Logo, ResultBottom } from '../database/asset';
 
 const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
@@ -120,12 +120,9 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
                             </div>
 
-
-
-
                             {/* Restart btn */}
                             {isTestCompleted ? (
-                                <div className='my-16 px-8 w-full flex justify-center flex-col gap-6'>
+                                <div className='mt-16 mb-40 md:mb-60 px-8 w-full flex justify-center flex-col gap-6'>
                                     <Button primary
                                         onClick={openShareImg}
                                         className="flex w-full justify-center">
@@ -143,6 +140,11 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                     </Button>
                                 </div>
                             ) : null}
+
+                            {/* bottom img */}
+                            <div className='absolute bottom-0'>
+                                <img src={ResultBottom} alt="" />
+                            </div>
 
                         </div>
                     ) : (
