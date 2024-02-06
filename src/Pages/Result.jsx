@@ -25,7 +25,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
     // display result text
     function resultElement(index) {
         return (
-            <div className='flex flex-col gap-4 items-center w-full'>
+            <div className='flex flex-col gap-4 items-center w-full bg-resultBg'>
 
                 {/* showResult or restart */}
                 {
@@ -39,8 +39,13 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 ) : (
                                     <div className='flex flex-col gap-6 text-white'>
 
+                                        <p className='z-10 absolute top-0 left-24'>
+                                            你是一隻...
+                                        </p>
+
                                         {/* title */}
                                         <div className='absolute -top-6 flex items-end justify-center gap-2 bg-resultBanner tracking-widest w-full h-24'>
+
                                             <h3 className='text-5xl  font-bold text-center'>
                                                 {resultData[index].title}
                                             </h3>
@@ -102,7 +107,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                         className="flex w-full justify-center">
                                         我要報名
                                     </Button>
-                                    <Button secondary
+                                    <Button primary
                                         onClick={handleRetakeTest}
                                         className="flex w-full justify-center">
                                         再測一次
