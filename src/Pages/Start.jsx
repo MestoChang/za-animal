@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
-import { Logo } from '../database/asset';
+import { Title } from '../database/asset';
 
 const Start = ({ onClick }) => {
     return (
