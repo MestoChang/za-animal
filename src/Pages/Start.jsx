@@ -12,8 +12,8 @@ const Start = ({ onClick }) => {
             </div>
 
             {/*<h2 className='text-2xl font-bold text-white'>你是哪種焦慮動物</h2>*/}
-            <h3 className='text-base font-bold text-white'>這是一個焦慮世代，生活中有各種讓人煩惱的事物。六種動物看清你現在的焦慮源頭。</h3>
-
+            <h3 className='text-base font-bold text-white'>這是一個焦慮世代，生活中有各種讓人煩惱的事物。</h3>
+            <h3 className='text-base font-bold text-white'>六種動物看清你現在的焦r慮源頭。</h3>
             {/* logo 
             <div className='my-4 w-full flex justify-center'>
                 <img src={Logo} className='w-[80%]' />
