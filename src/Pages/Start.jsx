@@ -4,7 +4,7 @@ import { Title, StartButton } from '../database/asset';
 
 const Start = ({ onClick }) => {
     return (
-        <div className='p-6 min-h-screen w-full flex flex-col justify-center items-center gap-4 text-quizColor'>
+        <div className='p-6 min-h-screen w-full flex flex-col items-center gap-10 text-quizColor mt-12'>
 
             {/* 心測標題 */}
             <div className='w-full flex justify-center'>
@@ -12,9 +12,20 @@ const Start = ({ onClick }) => {
             </div>
 
             {/*<h2 className='text-2xl font-bold text-white'>你是哪種焦慮動物</h2>*/}
-            <h3 className='font-bold'>這是一個焦慮世代，生活中有各種讓人煩惱的事物。六種動物看清你現在的焦慮源頭。</h3>
+            <div className='font-bold w-full text-lg flex flex-col items-center'>
+                <p>
+                    這是一個焦慮世代，
+                </p>
+                <p>
+                    生活中有各種讓人煩惱的事物。
+                </p>
 
-            <div className='my-6 px-4 flex flex-col items-center justify-center gap-10 w-full'>
+                <p>
+                    六種動物看清你現在的焦慮源頭。
+                </p>
+            </div>
+
+            <div className='my-6 px-4 flex flex-col items-center justify-center gap-10 mb-8 w-full'>
 
                 <div className='w-[80%]'>
 
@@ -30,8 +41,8 @@ const Start = ({ onClick }) => {
 
                 {/* start button */}
                 <img src={StartButton} onClick={onClick} className='cursor-pointer hover:opacity-80 ease-in-out duration-150' />
-
             </div>
+
         </div>
     )
 }

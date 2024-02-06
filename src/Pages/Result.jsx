@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import resultData from '../database/resultData';
 import Button from '../components/Button';
-import { Invatation } from '../database/asset';
+import { Invatation, Logo, ResultBottom } from '../database/asset';
 
 const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
@@ -39,14 +39,14 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 ) : (
                                     <div className='flex flex-col gap-6 text-white'>
 
-                                        <p className='z-10 absolute top-0 left-24'>
+                                        <p className='z-10 text-lg absolute top-0 left-24'>
                                             你是一隻...
                                         </p>
 
                                         {/* title */}
                                         <div className='absolute -top-6 flex items-end justify-center gap-2 bg-resultBanner tracking-widest w-full h-24'>
 
-                                            <h3 className='text-5xl  font-bold text-center'>
+                                            <h3 className='text-4xl  font-bold text-center'>
                                                 {resultData[index].title}
                                             </h3>
                                         </div>
@@ -63,9 +63,9 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                             <img src={resultData[index].img} className='w-[80%] h-auto mb-2 rounded-lg' />
 
                                             {/* hashtag */}
-                                            <div className='flex flex-wrap justify-center gap-2 absolute bottom-6'>
+                                            <div className='flex flex-wrap justify-center gap-2 absolute bottom-4 text-base md:text-lg'>
                                                 {resultData[index].hashtag.map((tag, index) => (
-                                                    <span key={index} className='bg-white text-gray-900 font-bold px-2 py-0.5 rounded border-2 border-gray-900'>
+                                                    <span key={index} className='bg-white text-gray-900 font-bold px-2 py-0.5 rounded border-2 border-gray-900 shadow-lg'>
                                                         #{tag}
                                                     </span>
                                                 ))}
@@ -73,7 +73,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                         </div>
 
                                         {/* description */}
-                                        <div className='mx-8 p-6 bg-white border border-gray-700 text-gray-900'>
+                                        <div className='mx-8 p-4 bg-white border border-gray-700 text-gray-900'>
                                             {resultData[index].description.map((p, index) => (
                                                 <p key={index}>
                                                     {p}
@@ -82,7 +82,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                         </div>
 
                                         {/* invite */}
-                                        <div className='mx-8 p-6 bg-white border border-gray-700 text-gray-900'>
+                                        <div className='mx-8 p-4 bg-white border border-gray-700 text-gray-900'>
                                             {resultData[index].invite.map((p, index) => (
                                                 <p key={index}>
                                                     {p}
@@ -94,9 +94,35 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                     </div>
                                 )}
 
+
+                            {/* Logo */}
+                            <div className='p-4 w-full flex flex-col gap-12 mt-6'>
+
+                                {/* logo */}
+                                <div className='w-full flex justify-center'>
+                                    <img src={Logo} className='w-[80%]' />
+                                </div>
+
+                                {/* date & text */}
+                                <div className='flex gap-4 items-center justify-center text-2xl md:text-3xl text-greenText font-bold tracking-[.15rem]'>
+                                    {/* date */}
+                                    <div className='flex flex-col gap-1.5 it'>
+                                        <span>03</span>
+                                        <span>09</span>
+                                    </div>
+
+                                    {/* text */}
+                                    <div className='flex flex-col gap-1.5'>
+                                        <span>不再蕉綠</span>
+                                        <span>用音樂告別EMO</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
                             {/* Restart btn */}
                             {isTestCompleted ? (
-                                <div className='my-16 px-8 w-full flex justify-center flex-col gap-6'>
+                                <div className='mt-16 mb-40 md:mb-60 px-8 w-full flex justify-center flex-col gap-6'>
                                     <Button primary
                                         onClick={openShareImg}
                                         className="flex w-full justify-center">
@@ -114,6 +140,11 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                     </Button>
                                 </div>
                             ) : null}
+
+                            {/* bottom img */}
+                            <div className='absolute bottom-0'>
+                                <img src={ResultBottom} alt="" />
+                            </div>
 
                         </div>
                     ) : (
