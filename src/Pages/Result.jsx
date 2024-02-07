@@ -56,9 +56,9 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                         <div className='relative mt-20 p-6 w-full flex flex-col gap-6 items-center '>
 
                                             {/* Type */}
-                                            <span className='absolute top-3 left-10 flex justify-center items-center text-3xl tracking-wider font-bold bg-resultType text-white px-3 py-1.5 rounded'>
+                                            {/* <span className='absolute top-3 left-10 flex justify-center items-center text-3xl tracking-wider font-bold bg-resultType text-white px-3 py-1.5 rounded'>
                                                 {resultData[index].type}
-                                            </span>
+                                            </span> */}
 
                                             <img src={resultData[index].img} className='w-[80%] h-auto mb-2 rounded-lg' />
 
@@ -142,7 +142,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                             ) : null}
 
                             {/* bottom img */}
-                            <div className='absolute bottom-0'>
+                            <div className='absolute bottom-0 left-0 right-0 -z-10'>
                                 <img src={ResultBottom} alt="" />
                             </div>
 
