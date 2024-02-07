@@ -15,7 +15,7 @@
 }
 
 .secondary-btn {
-    @apply bg-gray-100 text-gray-700;
+    @apply bg-resultType text-gray-100;
 }
 
 .secondary-outline-btn {
