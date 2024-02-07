@@ -109,7 +109,7 @@ const resultData = [
         ],
         hashtag: [
             "死了都要美",
-            "不要拍我，我素顏",
+            "不要拍，我素顏",
             "這張太醜了，刪掉"
         ],
         img: Result06,
