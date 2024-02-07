@@ -60,7 +60,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                                 {resultData[index].type}
                                             </span> */}
 
-                                            <img src={resultData[index].img} className='w-[80%] h-auto mb-2 rounded-lg' />
+                                            <img src={resultData[index].img} className='w-[90%] -translate-x-4 h-auto mb-2 rounded-lg' />
 
                                             {/* hashtag */}
                                             <div className='flex flex-wrap justify-center gap-2 absolute bottom-4 text-base md:text-lg'>
