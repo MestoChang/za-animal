@@ -30,14 +30,14 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                 {/* showResult or restart */}
                 {
                     showResult ? (
-                        <div className='w-full relative'>
+                        <div className='w-full relative bg-resultBg'>
 
                             {/* shareResultImg or description */}
                             {
                                 showShareImg ? (
-                                    <img src={resultData[index].shareImg} className='w-full h-auto mb-2' />
+                                    <img src={resultData[index].shareImg} className='w-[80%] h-auto mb-2' />
                                 ) : (
-                                    <div className='flex flex-col gap-6 bg-resultBg '>
+                                    <div className='flex flex-col gap-6'>
 
                                         <p className='z-10 text-lg absolute top-0 left-24 text-white'>
                                             你是一隻...
@@ -53,7 +53,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
 
                                         {/* img */}
-                                        <div className='relative mt-20 p-6 w-full flex flex-col gap-6 items-center '>
+                                        <div className='relative mt-20 p-6 w-full flex flex-col gap-6 items-center'>
 
                                             {/* Type */}
                                             {/* <span className='absolute top-3 left-10 flex justify-center items-center text-3xl tracking-wider font-bold bg-resultType text-white px-3 py-1.5 rounded'>

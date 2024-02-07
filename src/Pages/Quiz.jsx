@@ -107,7 +107,7 @@ const Quiz = () => {
                             </span>
                         </h2>
                         <div className='p-6 flex items-center justify-center'>
-                            <img src={quizData[currentQuestion].icon} />
+                            <img src={quizData[currentQuestion].icon} className='w-[80%]' />
                         </div>
                         <p className='text-quizColor my-3'>
                             {quizData[currentQuestion].question}
