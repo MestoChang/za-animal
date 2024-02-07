@@ -13,9 +13,9 @@ const resultData = [
             "意識人群的你，就像獼猴一樣，成長過程中需要許多夥伴的支持。Zootopia跟你分享與人相處的自我底線，一起尋找絕對會挺你到底的好夥伴吧！"
         ],
         hashtag: [
-            "#不揪～欸",
-            "#確實ss",
-            "#都行"
+            "不揪～欸",
+            "確實ss",
+            "都行"
         ],
         img: Result01,
         shareImg: ShareResult01,
@@ -32,9 +32,9 @@ const resultData = [
             "追尋人生意義的你，就像格陵蘭鯊一樣，渴望找到活著的意義，Zootopia與你一起找尋更明確的方向。"
         ],
         hashtag: [
-            "#為什麼",
-            "#大器晚成",
-            "#哈哈這我"
+            "為什麼",
+            "大器晚成",
+            "哈哈這我"
         ],
         img: Result02,
         shareImg: ShareResult02,
@@ -51,9 +51,9 @@ const resultData = [
             "總是想符合父母期待的你，就像狐蒙一樣，似乎永遠不夠好，真是壓力山大，Zootopia與你分享正確認知，換個方法解除魔咒、解鎖嶄新人生地圖。"
         ],
         hashtag: [
-            "#為什麼",
-            "#大器晚成",
-            "#哈哈這我"
+            "為什麼",
+            "大器晚成",
+            "哈哈這我"
         ],
         img: Result03,
         shareImg: ShareResult03,
@@ -70,9 +70,9 @@ const resultData = [
             "努力追求能力的你，渴望擁有像翠鳥一樣精準到位的生存技巧，Zootopia將說服你，你很優秀！我們一起穩定發揮吧！"
         ],
         hashtag: [
-            "#要確～欸",
-            "#完美主義",
-            "#捲王"
+            "要確～欸",
+            "完美主義",
+            "捲王"
         ],
         img: Result04,
         shareImg: ShareResult04,
@@ -89,9 +89,9 @@ const resultData = [
             "追求財務自由的你，就像棕熊一樣，誓死捍衛自己所擁有的一切，你所追求的，真的是你要的嗎？Zootopia跟你說說更多有價值的事物！"
         ],
         hashtag: [
-            "#你不理財，財不理你",
-            "#這個有打折嗎",
-            "#請詳閱公開說明書"
+            "你不理財，財不理你",
+            "這個有打折嗎",
+            "請詳閱公開說明書"
         ],
         img: Result05,
         shareImg: ShareResult05,
@@ -108,9 +108,9 @@ const resultData = [
             "華麗的你，就像孔雀一樣總是保持美麗、保持帥哥，Zootopia讓你看看什麼是內外兼具的華麗代言人！"
         ],
         hashtag: [
-            "#死了都要美",
-            "#不要拍我，我素顏",
-            "#這張太醜了，刪掉"
+            "死了都要美",
+            "不要拍我，我素顏",
+            "這張太醜了，刪掉"
         ],
         img: Result06,
         shareImg: ShareResult06,
