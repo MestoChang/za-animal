@@ -142,7 +142,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                             ) : null}
 
                             {/* bottom img */}
-                            <div className='absolute bottom-0 left-0 right-0 -z-10'>
+                            <div className='absolute bottom-0 left-0 right-0'>
                                 <img src={ResultBottom} alt="" />
                             </div>
 
