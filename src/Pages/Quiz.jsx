@@ -92,7 +92,7 @@ const Quiz = () => {
                 // Result or Quiz
                 showResult ? (
                     // Result
-                    <div className='w-full h-full flex flex-col justify-center '>
+                    <div className='w-full h-full flex flex-col justify-center relative'>
 
                         <Result finalResult={finalResult} handleRetakeTest={handleRetakeTest} isTestCompleted={isTestCompleted} />
 

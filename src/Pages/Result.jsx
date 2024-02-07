@@ -25,7 +25,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
     // display result text
     function resultElement(index) {
         return (
-            <div className='flex flex-col gap-4 items-center w-full bg-resultBg'>
+            <div className='flex flex-col gap-4 items-center w-full h-full'>
 
                 {/* showResult or restart */}
                 {
@@ -37,14 +37,14 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 showShareImg ? (
                                     <img src={resultData[index].shareImg} className='w-full h-auto mb-2' />
                                 ) : (
-                                    <div className='flex flex-col gap-6 text-white'>
+                                    <div className='flex flex-col gap-6 bg-resultBg '>
 
-                                        <p className='z-10 text-lg absolute top-0 left-24'>
+                                        <p className='z-10 text-lg absolute top-0 left-24 text-white'>
                                             你是一隻...
                                         </p>
 
                                         {/* title */}
-                                        <div className='absolute -top-6 flex items-end justify-center gap-2 bg-resultBanner tracking-widest w-full h-24'>
+                                        <div className='absolute -top-6 flex items-end justify-center gap-2 bg-resultBanner tracking-widest w-full h-24 text-white'>
 
                                             <h3 className='text-4xl  font-bold text-center'>
                                                 {resultData[index].title}
@@ -149,7 +149,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                         </div>
                     ) : (
 
-                        <div className='p-6 flex items-center justify-center flex-col gap-6 pt-10'>
+                        <div className='p-6 pt-12 flex items-center justify-center flex-col gap-6'>
 
                             <p className='text-xl font-bold text-quizColor'>
                                 突然你手上出現了一封信函，你趕緊打開來看...
