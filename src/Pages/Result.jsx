@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import resultData from '../database/resultData';
 import Button from '../components/Button';
-import { Invatation, Logo, ResultBottom } from '../database/asset';
+import { Invitation, Logo, ResultBottom } from '../database/asset';
 
 const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
@@ -155,7 +155,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 突然你手上出現了一封信函，你趕緊打開來看...
                             </p>
 
-                            <img src={Invatation} alt="" />
+                            <img src={Invitation} alt="" />
 
                             {/* show Result Img Btn */}
                             <div className='w-full flex justify-center flex-col mt-6'>

@@ -24,10 +24,10 @@ import Q10 from './Q10.png';
 import Q11 from './Q11.png';
 import QuizBottom from './QuizBottom.png';
 import ResultBottom from './ResultBottom.png';
-import Invatation from './invatation.png';
+import Invitation from './invitation.png';
 import Logo from './logo.png';
 import Title from './Title.png';
-import StartButton from './StartButton.png'; 
+import StartButton from './StartButton.png';
 
 export {
     Result01,
@@ -61,6 +61,6 @@ export {
 
     QuizBottom,
     ResultBottom,
-    Invatation,
+    Invitation,
     Logo
 }
