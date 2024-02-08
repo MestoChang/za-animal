@@ -32,25 +32,26 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                     showResult ? (
                         <div className='w-full relative bg-resultBg'>
 
+                            <p className='z-10 text-lg absolute top-0 left-24 text-white'>
+                                你是一隻...
+                            </p>
+
+                            {/* title */}
+                            <div className='absolute -top-6 flex items-end justify-center gap-2 bg-resultBanner tracking-widest w-full h-24 text-white'>
+
+                                <h3 className='text-4xl  font-bold text-center'>
+                                    {resultData[index].title}
+                                </h3>
+                            </div>
+
                             {/* shareResultImg or description */}
                             {
                                 showShareImg ? (
-                                    <img src={resultData[index].shareImg} className='w-[80%] h-auto mb-2' />
+                                    <div className='mt-28 w-full flex justify-center items-center'>
+                                        <img src={resultData[index].shareImg} className='w-[80%] h-auto mb-2' />
+                                    </div>
                                 ) : (
                                     <div className='flex flex-col gap-10'>
-
-                                        <p className='z-10 text-lg absolute top-0 left-24 text-white'>
-                                            你是一隻...
-                                        </p>
-
-                                        {/* title */}
-                                        <div className='absolute -top-6 flex items-end justify-center gap-2 bg-resultBanner tracking-widest w-full h-24 text-white'>
-
-                                            <h3 className='text-4xl  font-bold text-center'>
-                                                {resultData[index].title}
-                                            </h3>
-                                        </div>
-
 
                                         {/* img */}
                                         <div className='relative mt-20 p-6 w-full flex flex-col gap-6 items-center'>
@@ -137,7 +138,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                     <Button primary
                                         onClick={openShareImg}
                                         className="flex w-full justify-center">
-                                        分享結果
+                                            {showShareImg ? '顯示文字' : '分享結果'}
                                     </Button>
                                     <Button primary
                                         onClick={handleRetakeTest}

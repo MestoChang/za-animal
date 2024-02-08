@@ -63,7 +63,7 @@ const Quiz = () => {
         setScoreD(scoreD + selectedScore.D);
         setScoreE(scoreE + selectedScore.E);
         setScoreF(scoreF + selectedScore.F);
-        console.log("A:", scoreA, "B:", scoreB, "C:", scoreC, "D:", scoreD, "E:", scoreE, "F:", scoreF);
+        // console.log("A:", scoreA, "B:", scoreB, "C:", scoreC, "D:", scoreD, "E:", scoreE, "F:", scoreF);
 
         // get highest score and type
         const scoreArray = [scoreA, scoreB, scoreC, scoreD, scoreE, scoreF];
