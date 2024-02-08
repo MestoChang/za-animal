@@ -84,8 +84,8 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
                                         {/* invite */}
                                         <div className='relative'>
-                                            <span className='absolute -top-6 left-4 bg-resolutionTitle text-gray-900 border border-gray-900 font-bold px-2.5 py-1'>
-                                                憂慮解方
+                                            <span className='absolute -top-6 left-5 bg-resolutionTitle text-gray-900 border border-gray-900 font-bold px-2.5 py-1'>
+                                                焦慮解方
                                             </span>
                                             <div className='mx-8 p-4 bg-white border border-gray-700 text-gray-900'>
 
