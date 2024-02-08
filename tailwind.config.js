@@ -11,8 +11,8 @@ export default {
         quizColor: '#006224',
         quizBg: '#C5E09E',
 
-        optionBg: '#449F66',
-        optionHoverBg: '#006224',
+        optionBg: '#006224',
+        optionHoverBg: '#449F66',
 
         resultBg: '#F1F1F1',
         resultBanner: '#60A9A7',
