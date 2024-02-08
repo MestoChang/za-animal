@@ -128,7 +128,6 @@ const Quiz = () => {
                             }
                         </ul>
 
-                        {/* FIXME adjust img hight */}
                         {/* bottom img */}
                         <div className='absolute bottom-0 left-0 right-0 -z-20'>
                             <img src={QuizBottom} alt="" />
