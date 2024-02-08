@@ -37,7 +37,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 showShareImg ? (
                                     <img src={resultData[index].shareImg} className='w-[80%] h-auto mb-2' />
                                 ) : (
-                                    <div className='flex flex-col gap-6'>
+                                    <div className='flex flex-col gap-10'>
 
                                         <p className='z-10 text-lg absolute top-0 left-24 text-white'>
                                             你是一隻...
@@ -82,12 +82,18 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                         </div>
 
                                         {/* invite */}
-                                        <div className='mx-8 p-4 bg-white border border-gray-700 text-gray-900'>
-                                            {resultData[index].invite.map((p, index) => (
-                                                <p key={index}>
-                                                    {p}
-                                                </p>
-                                            ))}
+                                        <div className='relative'>
+                                            <span className='absolute -top-6 left-4 bg-resolutionTitle text-gray-900 border border-gray-900 font-bold px-2.5 py-1'>
+                                                憂慮解方
+                                            </span>
+                                            <div className='mx-8 p-4 bg-white border border-gray-700 text-gray-900'>
+
+                                                {resultData[index].invite.map((p, index) => (
+                                                    <p key={index}>
+                                                        {p}
+                                                    </p>
+                                                ))}
+                                            </div>
                                         </div>
 
 
@@ -122,7 +128,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
                             {/* Restart btn */}
                             {isTestCompleted ? (
-                                <div className='mt-16 mb-40 md:mb-60 px-8 w-full flex justify-center flex-col gap-6'>
+                                <div className='mt-16 mb-60 px-8 w-full flex justify-center flex-col gap-6'>
                                     <Button secondary
                                         onClick={handleToSignUp}
                                         className="flex w-full justify-center">
@@ -142,7 +148,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                             ) : null}
 
                             {/* bottom img */}
-                            <div className='absolute bottom-0 left-0 right-0'>
+                            <div className='absolute bottom-0 left-0 right-0 '>
                                 <img src={ResultBottom} alt="" />
                             </div>
 

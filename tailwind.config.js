@@ -17,7 +17,7 @@ export default {
         resultBg: '#F1F1F1',
         resultBanner: '#60A9A7',
         resultType: '#FF661B',
-        hashtagBg: '#FCD03E',
+        resolutionTitle: '#FCD03E',
       },
     },
   },
