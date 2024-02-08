@@ -4,12 +4,12 @@ import Result03 from './Result_03.png';
 import Result04 from './Result_04.png';
 import Result05 from './Result_05.png';
 import Result06 from './Result_06.png';
-import ShareResult01 from './ShareResult_01.jpg';
-import ShareResult02 from './ShareResult_02.jpg';
-import ShareResult03 from './ShareResult_03.jpg';
-import ShareResult04 from './ShareResult_04.jpg';
-import ShareResult05 from './ShareResult_05.jpg';
-import ShareResult06 from './ShareResult_06.jpg';
+import ShareResult01 from './ShareResult_01.png';
+import ShareResult02 from './ShareResult_02.png';
+import ShareResult03 from './ShareResult_03.png';
+import ShareResult04 from './ShareResult_04.png';
+import ShareResult05 from './ShareResult_05.png';
+import ShareResult06 from './ShareResult_06.png';
 
 import Q1 from './Q1.png';
 import Q2 from './Q2.png';
@@ -28,6 +28,7 @@ import Invitation from './invitation.png';
 import Logo from './logo.png';
 import Title from './Title.png';
 import StartButton from './StartButton.png';
+import StartBg from './StartBg.png';
 
 export {
     Result01,
@@ -44,6 +45,7 @@ export {
     ShareResult05,
     ShareResult06,
 
+    StartBg,
     Title,
     StartButton,
 
