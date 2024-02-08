@@ -48,7 +48,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                             {
                                 showShareImg ? (
                                     <div className='mt-28 w-full flex justify-center items-center'>
-                                        <img src={resultData[index].shareImg} className='w-[80%] h-auto mb-2' />
+                                        <img src={resultData[index].shareImg} className='w-[80%] h-auto mb-2 shadow-lg rounded' />
                                     </div>
                                 ) : (
                                     <div className='flex flex-col gap-10'>
