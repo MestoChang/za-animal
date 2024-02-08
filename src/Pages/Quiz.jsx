@@ -129,7 +129,7 @@ const Quiz = () => {
                         </ul>
 
                         {/* bottom img */}
-                        <div className='absolute bottom-0 left-0 right-0 -z-20'>
+                        <div className='absolute bottom-0 left-0 right-0 -z-20 opacity-60'>
                             <img src={QuizBottom} alt="" />
                         </div>
 

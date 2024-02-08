@@ -4,10 +4,10 @@ import { Title, StartButton } from '../database/asset';
 
 const Start = ({ onClick }) => {
     return (
-        <div className='p-6 min-h-screen w-full flex flex-col items-center gap-10 text-quizColor mt-12'>
+        <div className='relative p-6 min-h-screen w-full flex flex-col items-center gap-10 text-quizColor bg-cover bg-center start-background'>
 
             {/* 心測標題 */}
-            <div className='w-full flex justify-center'>
+            <div className='w-full flex justify-center  mt-12'>
                 <img src={Title} className='w-[80%]' />
             </div>
 
@@ -42,6 +42,11 @@ const Start = ({ onClick }) => {
                 {/* start button */}
                 <img src={StartButton} onClick={onClick} className='cursor-pointer hover:opacity-80 ease-in-out duration-150' />
             </div>
+
+            {/* bg img */}
+            {/* <div className='absolute inset-0 h-full'>
+                <img src={StartBg} className='object-cover' />
+            </div> */}
 
         </div>
     )
