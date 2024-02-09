@@ -43,10 +43,6 @@ const Start = ({ onClick }) => {
                 <img src={StartButton} onClick={onClick} className='cursor-pointer hover:opacity-80 ease-in-out duration-150' />
             </div>
 
-            {/* bg img */}
-            {/* <div className='absolute inset-0 h-full'>
-                <img src={StartBg} className='object-cover' />
-            </div> */}
 
         </div>
     )
