@@ -21,7 +21,7 @@ const Start = ({ onClick }) => {
                 </p>
 
                 <p>
-                    六種動物看清你現在的焦慮源頭。
+                    六種動物看清你現在的焦慮源頭！
                 </p>
             </div>
 
@@ -40,7 +40,7 @@ const Start = ({ onClick }) => {
                 </div>
 
                 {/* start button */}
-                <img src={StartButton} onClick={onClick} className='cursor-pointer hover:opacity-80 ease-in-out duration-150' />
+                <img src={StartButton} onClick={onClick} className='w-[20%] cursor-pointer hover:opacity-80 ease-in-out duration-150' />
             </div>
 
 

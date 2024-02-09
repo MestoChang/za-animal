@@ -19,9 +19,7 @@ import Q5 from './Q5.png';
 import Q6 from './Q6.png';
 import Q7 from './Q7.png';
 import Q8 from './Q8.png';
-import Q9 from './Q9.png';
-import Q10 from './Q10.png';
-import Q11 from './Q11.png';
+
 import QuizBottom from './QuizBottom.png';
 import ResultBottom from './ResultBottom.png';
 import Invitation from './invitation.png';
@@ -57,9 +55,6 @@ export {
     Q6,
     Q7,
     Q8,
-    Q9,
-    Q10,
-    Q11,
 
     QuizBottom,
     ResultBottom,

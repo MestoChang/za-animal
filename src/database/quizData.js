@@ -1,9 +1,9 @@
-import { Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11 } from "./asset";
+import { Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8 } from "./asset";
 
 const quizData = [
     {
         title: "1",
-        icon: Q2,
+        icon: Q1,
         question: "為了尋找回去的方法，你開始往前探索。你覺得前方可能會遇到...",
         options: [
             {
@@ -44,7 +44,7 @@ const quizData = [
     },
     {
         title: "2",
-        icon: Q3,
+        icon: Q2,
         question: "在森林裡走了好長一段時間，還是沒有任何發現。你開始擔心明天的行程會被耽誤...",
         options: [
             {
@@ -84,7 +84,7 @@ const quizData = [
     },
     {
         title: "3",
-        icon: Q4,
+        icon: Q3,
         question: "遇見了一隻昏倒在山洞前的小梅花鹿，你會怎麼做？",
         options: [
             {
@@ -125,8 +125,8 @@ const quizData = [
     },
     {
         title: "4",
-        icon: Q5,
-        question: "在山洞裡摸黑走了一陣子，終於看見出口的亮光，前方有腳步聲朝你走來，你覺得會是...",
+        icon: Q4,
+        question: "終於看見山洞出口，前方有腳步聲朝你走來，你覺得會是...",
         options: [
             {
                 text: '兇猛的蛤蟆怪',
@@ -167,8 +167,8 @@ const quizData = [
 
     {
         title: "5",
-        icon: Q6,
-        question: "一大片清澈的湖水印入眼簾，旁邊立牌寫著「許願池」。你願意投入什麼作為許願的代價？",
+        icon: Q5,
+        question: "眼前一片清澈的湖水，旁邊立牌寫著「許願池」。你願意投入什麼作為許願的代價？",
         options: [
             {
                 text: '背包裡僅存的食物',
@@ -207,7 +207,7 @@ const quizData = [
     },
     {
         title: "6",
-        icon: Q7,
+        icon: Q6,
         question: "一位美麗的湖中女神真的出現，為了幫助你更順利地在這座森林中探索，你選擇...",
         options: [
             {
@@ -247,7 +247,7 @@ const quizData = [
     },
     {
         title: "7",
-        icon: Q8,
+        icon: Q7,
         question: "道別湖中女神後，你繼續前行，發現空無一人的小木屋，裡面有...",
         options: [
             {
@@ -287,7 +287,7 @@ const quizData = [
     },
     {
         title: "8",
-        icon: Q11,
+        icon: Q8,
         question: "混亂過後，森林某處傳來了音樂與歌聲，彷彿萬物甦醒，可能會是？",
         options: [
             {
