@@ -167,7 +167,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 突然你手上出現了一封信函，你趕緊打開來看...
                             </p>
 
-                            <img src={Invitation} alt="" />
+                            <img src={Invitation} alt="" className='max-w-[75%]' />
 
                             {/* show Result Img Btn */}
                             <div className='w-full flex justify-center flex-col mt-6'>
