@@ -111,16 +111,21 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                 </div>
 
                                 {/* date & text */}
-                                <div className='flex gap-4 items-center justify-center text-2xl md:text-3xl text-greenText font-bold tracking-[.15rem]'>
-                                    {/* date */}
-                                    <div className='flex flex-col gap-1.5 it'>
-                                        <span>03</span>
-                                        <span>09</span>
+                                <div className='flex flex-col gap-5 items-center justify-center text-2xl md:text-3xl text-greenText font-bold tracking-wide '>
+                                    {/* date and location */}
+                                    <div className='flex flex-col gap-2 text-center'>
+                                        <span>
+                                            中部跨校音樂派對
+                                        </span>
+                                        <span className='text-lg md:text-xl text-quizColor'>
+                                            台中市北區尊賢街7號19樓(鄰近一中街)
+                                        </span>
                                     </div>
 
-                                    {/* text */}
-                                    <div className='flex flex-col gap-1.5'>
-                                        <span>不再蕉綠</span>
+
+                                    {/* activity name */}
+                                    <div className='flex gap-2'>
+                                        <span>3月9日</span>
                                         <span>用音樂告別EMO</span>
                                     </div>
                                 </div>
@@ -138,7 +143,7 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                                     <Button primary
                                         onClick={openShareImg}
                                         className="flex w-full justify-center">
-                                            {showShareImg ? '顯示文字' : '分享結果'}
+                                        {showShareImg ? '顯示文字' : '分享結果'}
                                     </Button>
                                     <Button primary
                                         onClick={handleRetakeTest}
