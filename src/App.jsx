@@ -9,6 +9,11 @@ const App = () => {
         <Quiz />
       </div>
 
+      <footer className='h-8 absolute left-0 right-0 text-center bottom-0 z-20 text-xs md:text-sm text-white tracking-wide shadow'>
+        Copyright © 2024 camego 團契. All rights reserved.
+      </footer>
+
+
     </div>
   )
 }
