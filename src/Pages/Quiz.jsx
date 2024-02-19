@@ -99,8 +99,8 @@ const Quiz = () => {
                     </div>
                 ) : (
                     // Quiz
-                    <div className="mt-4 flex flex-col gap-4 p-6 w-full items-center ">
-                        <h2 className='text-xl font-bold text-quizColor'>
+                    <div className="mt-4 flex flex-col p-6 w-full items-center ">
+                        <h2 className='text-2xl font-bold text-quizColor'>
                             {quizData[currentQuestion].title}
                             <span className='text-sm opacity-60 ml-1'>
                                 / {quizData.length}
