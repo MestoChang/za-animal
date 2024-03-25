@@ -103,34 +103,34 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
 
 
                             {/* Logo */}
-                            <div className='p-4 w-full flex flex-col gap-12 mt-6'>
+                            {/* <div className='p-4 w-full flex flex-col gap-12 mt-6'> */}
 
                                 {/* logo */}
-                                <div className='w-full flex justify-center'>
-                                    <img src={Logo} className='w-[80%]' />
-                                </div>
+                                {/* <div className='w-full flex justify-center'> */}
+                                    {/* <img src={Logo} className='w-[80%]' /> */}
+                                {/* </div> */}
 
                                 {/* date & text */}
-                                <div className='flex flex-col gap-5 items-center justify-center text-2xl md:text-3xl text-greenText font-bold tracking-wide '>
+                                {/* <div className='flex flex-col gap-5 items-center justify-center text-2xl md:text-3xl text-greenText font-bold tracking-wide '> */}
                                     {/* date and location */}
-                                    <div className='flex flex-col gap-2 text-center'>
-                                        <span>
-                                            中部跨校音樂派對
-                                        </span>
-                                        <span className='text-lg md:text-xl text-quizColor'>
-                                            台中市北區尊賢街7號19樓(鄰近一中街)
-                                        </span>
-                                    </div>
+                                    {/* <div className='flex flex-col gap-2 text-center'> */}
+                                        {/* <span> */}
+                                            {/* 中部跨校音樂派對 */}
+                                        {/* </span> */}
+                                        {/* <span className='text-lg md:text-xl text-quizColor'> */}
+                                            {/* 台中市北區尊賢街7號19樓(鄰近一中街) */}
+                                        {/* </span> */}
+                                    {/* </div> */}
 
 
                                     {/* activity name */}
-                                    <div className='flex gap-2'>
-                                        <span>3月9日</span>
-                                        <span>用音樂告別EMO</span>
-                                    </div>
-                                </div>
+                                    {/* <div className='flex gap-2'> */}
+                                        {/* <span>3月9日</span> */}
+                                        {/* <span>用音樂告別EMO</span> */}
+                                    {/* </div> */}
+                                {/* </div> */}
 
-                            </div>
+                            {/* </div> */}
 
                             {/* Restart btn */}
                             {isTestCompleted ? (
