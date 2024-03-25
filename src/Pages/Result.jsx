@@ -135,11 +135,11 @@ const Result = ({ finalResult, handleRetakeTest, isTestCompleted }) => {
                             {/* Restart btn */}
                             {isTestCompleted ? (
                                 <div className='mt-16 mb-60 px-8 w-full flex justify-center flex-col gap-6'>
-                                    <Button secondary
+                                    {/* <Button secondary
                                         onClick={handleToSignUp}
                                         className="flex w-full justify-center">
                                         我要報名
-                                    </Button>
+                                    </Button> */}
                                     <Button primary
                                         onClick={openShareImg}
                                         className="flex w-full justify-center">
